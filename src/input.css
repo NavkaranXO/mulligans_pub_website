@@ -1,0 +1,78 @@
+@config "../tailwind.config.js";
+@import "tailwindcss";
+
+@tailwind utilities;
+
+@layer base {
+  html {
+    overflow-x: hidden;
+  }
+}
+/* Scroll Reveal Animation */
+.animate-on-scroll {
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+}
+
+/* Hero section background overlay */
+.hero-overlay {
+  background-image: linear-gradient(rgba(44, 26, 14, 0.6), rgba(44, 26, 14, 0.8));
+}
+
+/* Custom text shadow for hero text */
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Pulse animation for CTA buttons */
+.pulse-on-hover:hover {
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideInRight {
+  from { transform: translateX(50px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideInLeft {
+  from { transform: translateX(-50px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-in-out forwards;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.8s ease-in-out forwards;
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 0.8s ease-in-out forwards;
+}
+
+.animate-slide-in-left {
+  animation: slideInLeft 0.8s ease-in-out forwards;
+}

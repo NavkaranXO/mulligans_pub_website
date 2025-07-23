@@ -1,0 +1,492 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Menu - Mulligans Virtual Golf Pub & Bar</title>
+        <!-- Compiled Tailwind CSS -->
+        <link rel="stylesheet" href="../src/output.css">
+    </head>
+    <body class="bg-gray-100 font-sans">
+        <!-- Navigation Bar -->
+        <nav class="bg-green-800 text-white shadow-lg sticky top-0 z-50">
+            <div class="container mx-auto px-4">
+                <div class="flex justify-between items-center py-4">
+                    <!-- Logo -->
+                    <div class="flex items-center space-x-2">
+                        <a href="../index.html" class="font-bold text-2xl">Mulligans</a>
+                        <span class="text-sm sm:block hidden">Virtual Golf Pub & Bar</span>
+                    </div>
+                    
+                    <!-- Desktop Navigation -->
+                    <div class="hidden md:flex space-x-6">
+                        <a href="../index.html" class="hover:text-green-300 transition-custom">Home</a>
+                        <a href="menu.html" class="hover:text-green-300 transition-custom font-bold">Menu</a>
+                        <a href="contact.html" class="hover:text-green-300 transition-custom">Contact</a>
+                        <a href="gift-cards.html" class="hover:text-green-300 transition-custom">Gift Cards</a>
+                    </div>
+                    
+                    <!-- Book Now Button -->
+                    <a href="contact.html" class="sm:block hidden bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg transition-custom pulse-on-hover">
+                        Book Now
+                    </a>
+                    
+                    <!-- Mobile Menu Button -->
+                    <div class="md:hidden">
+                        <button id="mobile-menu-button" class="text-white focus:outline-none">
+                            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Mobile Navigation -->
+                <div id="mobile-menu" class="md:hidden hidden pb-4">
+                    <a href="../index.html" class="block py-2 hover:text-green-300 transition-custom">Home</a>
+                    <!--<a href="pages/passes.html" class="hover:text-green-300 transition-custom">Passes</a>-->
+                    <a href="menu.html" class="block py-2 hover:text-green-300 transition-custom font-bold">Menu</a>
+                    <a href="contact.html" class="block py-2 hover:text-green-300 transition-custom">Contact</a>
+                    <a href="gift-cards.html" class="block py-2 hover:text-green-300 transition-custom">Gift Cards</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Page Header -->
+        <header class="bg-green-700 text-white sm:py-12 py-8">
+            <div class="container mx-auto px-4 text-center">
+                <h1 class="sm:text-4xl text-2xl font-bold mb-2 animate-on-scroll animate-fade-in">OUR MENU</h1>
+                <p class="sm:text-xl text-lg animate-on-scroll animate-slide-up">Delicious food & drinks to enjoy while you play</p>
+            </div>
+        </header>
+
+        <!-- Menu Tabs -->
+        <section class="py-12">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-wrap justify-center mb-8">
+                    <button class="px-6 py-2 bg-green-800 text-white rounded-tl-lg rounded-bl-lg focus:outline-none">Food</button>
+                    <button class="px-6 py-2 bg-gray-200 text-gray-700 focus:outline-none">Happy Hour</button>
+                    <button class="px-6 py-2 bg-gray-200 text-gray-700 rounded-tr-lg rounded-br-lg focus:outline-none">Drinks</button>
+                </div>
+                
+                <!-- Food Menu -->
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Appetizers -->
+                    <div class="bg-white p-6 rounded-lg shadow-md animate-on-scroll">
+                        <h2 class="text-2xl font-bold text-green-800 mb-4 pb-2 border-b border-gray-200">APPETIZERS</h2>
+                        
+                        <div class="mb-4">
+                            <div class="flex justify-between items-center mb-1">
+                                <h3 class="font-bold text-gray-800">Wings</h3>
+                                <span class="text-green-700 font-bold">$15</span>
+                            </div>
+                            <p class="text-gray-600 text-sm">Deep fried breaded wings. Choice of hot, buffalo, salt & pepper, teriyaki, BBQ, lemon pepper, sweet chilli, bang bang, honey garlic or cajun.</p>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <div class="flex justify-between items-center mb-1">
+                                <h3 class="font-bold text-gray-800">Dirty Fries</h3>
+                                <span class="text-green-700 font-bold">$15</span>
+                            </div>
+                            <p class="text-gray-600 text-sm">Crispy Beer battered fries topped with parmesan and roasted garlic truffle aioli.</p>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <div class="flex justify-between items-center mb-1">
+                                <h3 class="font-bold text-gray-800">Loaded Up Nachos</h3>
+                                <span class="text-green-700 font-bold">$17</span>
+                            </div>
+                            <p class="text-gray-600 text-sm">Black beans, onions, olives, green peppers and banana peppers topped with fresh green onion and tomatoes. Served with salsa and sour cream. Add Chicken - $4 / Beef - $5</p>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <div class="flex justify-between items-center mb-1">
+                                <h3 class="font-bold text-gray-800">Pork Bites</h3>
+                                <span class="text-green-700 font-bold">$18</span>
+                            </div>
+                            <p class="text-gray-600 text-sm">Crispy breaded pork served with a side of sweet chilli sauce.</p>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <div class="flex justify-between items-center mb-1">
+                                <h3 class="font-bold text-gray-800">Calamari</h3>
+                                <span class="text-green-700 font-bold">$18</span>
+                            </div>
+                            <p class="text-gray-600 text-sm">Topped with red onions, over a bed of spring mix, served with house made tzatziki.</p>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <div class="flex justify-between items-center mb-1">
+                                <h3 class="font-bold text-gray-800">Yam Fries</h3>
+                                <span class="text-green-700 font-bold">$10</span>
+                            </div>
+                            <p class="text-gray-600 text-sm">Deep fried and served with chipotle aioli.</p>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <div class="flex justify-between items-center mb-1">
+                                <h3 class="font-bold text-gray-800">Mozza Sticks</h3>
+                                <span class="text-green-700 font-bold">$10</span>
+                            </div>
+                            <p class="text-gray-600 text-sm">Deep fried mozzarella sticks served with sweet chilli sauce.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Handhelds -->
+                    <div class="bg-white p-6 rounded-lg shadow-md animate-on-scroll">
+                        <h2 class="text-2xl font-bold text-green-800 mb-4 pb-2 border-b border-gray-200">HANDHELDS</h2>
+                        <p class="text-gray-600 text-sm mb-4">All handhelds are served with your choice of fries, soup or green salad.</p>
+                        
+                        <div class="mb-4">
+                            <div class="flex justify-between items-center mb-1">
+                                <h3 class="font-bold text-gray-800">Crispy Chicken Burger</h3>
+                                <span class="text-green-700 font-bold">$22</span>
+                            </div>
+                            <p class="text-gray-600 text-sm">Crispy chicken patty topped with lettuce, tomato, pickle, and mayo.</p>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <div class="flex justify-between items-center mb-1">
+                                <h3 class="font-bold text-gray-800">Cajun Chicken Burger</h3>
+                                <span class="text-green-700 font-bold">$22</span>
+                            </div>
+                            <p class="text-gray-600 text-sm">Grilled Cajun chicken with cheddar, lettuce and tomato. Topped with mayo.</p>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <div class="flex justify-between items-center mb-1">
+                                <h3 class="font-bold text-gray-800">Beef Burger</h3>
+                                <span class="text-green-700 font-bold">$22</span>
+                            </div>
+                            <p class="text-gray-600 text-sm">6oz beef patty topped with lettuce, onion, cheddar, tomato and pickles, made with our homemade burger sauce.</p>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <div class="flex justify-between items-center mb-1">
+                                <h3 class="font-bold text-gray-800">Veggie Burger</h3>
+                                <span class="text-green-700 font-bold">$20</span>
+                            </div>
+                            <p class="text-gray-600 text-sm">Vegetarian patty with cheddar, lettuce, tomato, onion and pickles with vegan mayo.</p>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <div class="flex justify-between items-center mb-1">
+                                <h3 class="font-bold text-gray-800">Add Ons</h3>
+                                <span class="text-green-700 font-bold"></span>
+                            </div>
+                            <p class="text-gray-600 text-sm">Bacon - $1.50 | Fried Egg - $1.50 | Mushrooms - $1.50 | Extra Cheese $1.50 | Avocado - $1.50</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Salads -->
+                    <div class="bg-white p-6 rounded-lg shadow-md animate-on-scroll">
+                        <h2 class="text-2xl font-bold text-green-800 mb-4 pb-2 border-b border-gray-200">SALADS</h2>
+                        
+                        <div class="mb-4">
+                            <div class="flex justify-between items-center mb-1">
+                                <h3 class="font-bold text-gray-800">Caesar Salad</h3>
+                                <span class="text-green-700 font-bold">$14</span>
+                            </div>
+                            <p class="text-gray-600 text-sm">Romaine lettuce, bacon bits, croutons and parmesan cheese, with Caesar dressing.</p>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <div class="flex justify-between items-center mb-1">
+                                <h3 class="font-bold text-gray-800">Green Salad</h3>
+                                <span class="text-green-700 font-bold">$14</span>
+                            </div>
+                            <p class="text-gray-600 text-sm">Spring mix, cucumber, tomatoes and red onion served with vinaigrette dressing.</p>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <div class="flex justify-between items-center mb-1">
+                                <h3 class="font-bold text-gray-800">Add Protein</h3>
+                                <span class="text-green-700 font-bold"></span>
+                            </div>
+                            <p class="text-gray-600 text-sm">Add Chicken - $4 / Shrimp - $5</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Mains -->
+                    <div class="bg-white p-6 rounded-lg shadow-md animate-on-scroll">
+                        <h2 class="text-2xl font-bold text-green-800 mb-4 pb-2 border-b border-gray-200">MAINS</h2>
+                        
+                        <div class="mb-4">
+                            <div class="flex justify-between items-center mb-1">
+                                <h3 class="font-bold text-gray-800">Steak Frites</h3>
+                                <span class="text-green-700 font-bold">$26</span>
+                            </div>
+                            <p class="text-gray-600 text-sm">7oz Top Sirloin sliced and served with red wine peppercorn gravy and fries.</p>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <div class="flex justify-between items-center mb-1">
+                                <h3 class="font-bold text-gray-800">Fish And Chips</h3>
+                                <span class="text-green-700 font-bold">$18/$21</span>
+                            </div>
+                            <p class="text-gray-600 text-sm">Fresh Atlantic beer battered cod served with fries and coleslaw. Choice between 1 or 2 pieces of fish.</p>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <div class="flex justify-between items-center mb-1">
+                                <h3 class="font-bold text-gray-800">Chicken Strips And Fries</h3>
+                                <span class="text-green-700 font-bold">$17</span>
+                            </div>
+                            <p class="text-gray-600 text-sm">Crispy chicken strips and fries and your choice of BBQ, honey mustard or ranch dip.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <!-- Happy Hour Section -->
+        <section class="py-12 bg-gray-200">
+            <div class="container mx-auto px-4">
+                
+                <h2 class="text-3xl font-bold text-center text-green-800 mb-8 animate-on-scroll">HAPPY HOUR</h2>
+                <div class="grid md:grid-cols-1 gap-6">
+                    <div class="bg-white p-6 mb-10 rounded-lg shadow-md animate-on-scroll">
+                        <h3 class="text-xl font-bold text-green-800 mb-3">7:00 PM - 9:00 PM</h3>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div>
+                                <ul class="space-y-2 text-gray-600 font-bold">
+                                    <li>$4.99 Signature Shooters</li>
+                                    <li>Golf Bay Rental $50/Hour/Bay</li>
+                                    <li>4 people Max Per Bay</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul class="space-y-2 text-gray-600">
+                                    <li>$5.99 16Oz Drafts</li>
+                                    <li>Bud, Bud Light, Michelob Ultra</li>
+                                    <li>Stanley Park Sun Setter Ale, Corona</li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Drink Specials -->
+                <h2 class="text-3xl font-bold text-center text-green-800 mb-8 animate-on-scroll" id="drinks">DRINKS</h2>
+                <!-- Beer Section -->
+                <h3 class="text-2xl font-bold text-center text-green-800 mb-6 animate-on-scroll"  >BEER</h3>
+                <div class="grid md:grid-cols-2 gap-6 mb-10">
+                    <!-- Beer on Tap -->
+                    <div class="bg-white p-6 rounded-lg shadow-md animate-on-scroll">
+                        <h3 class="text-xl font-bold text-green-800 mb-3">BEER ON TAP</h3>
+                        <div class="mb-4">
+                            <h4 class="font-bold text-gray-800 mb-2">Domestic (16oz: $7.25 | 20oz: $8.25 | Tower: $35.00)</h4>
+                            <ul class="space-y-1 text-gray-600">
+                                <li>Budweiser</li>
+                                <li>Bud Light</li>
+                                <li>Stanley Park Sunsetter</li>
+                                <li>Michelob Ultra</li>
+                                <li>Okanagan 1516 Lager</li>
+                                <li>Iron Road Loopline IPA</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800 mb-2">Import (16oz: $8.25 | 20oz: $9.25 | Tower: $39.00)</h4>
+                            <ul class="space-y-1 text-gray-600">
+                                <li>Paulaner</li>
+                                <li>Corona</li>
+                                <li>Stella</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Bottles and Cans -->
+                    <div class="bg-white p-6 rounded-lg shadow-md animate-on-scroll">
+                        <h3 class="text-xl font-bold text-green-800 mb-3">BOTTLES & CANS</h3>
+                        <div class="mb-4">
+                            <h4 class="font-bold text-gray-800 mb-2">Domestic ($6.75)</h4>
+                            <ul class="space-y-1 text-gray-600">
+                                <li>Budweiser - Bud Light</li>
+                                <li>Coors Original – Coors Light</li>
+                                <li>Miller Lite - Genuine Draft</li>
+                                <li>Molson Canadian</li>
+                                <li>Steamworks Trail Hopper IPA</li>
+                                <li>Steamworks Pale Ale</li>
+                                <li>Steamworks Pilsner</li>
+                                <li>Sleeman Honey Brown</li>
+                            </ul>
+                        </div>
+                        <div class="mb-4">
+                            <h4 class="font-bold text-gray-800 mb-2">Import ($7.50)</h4>
+                            <ul class="space-y-1 text-gray-600">
+                                <li>Dino Sour</li>
+                                <li>Heineken</li>
+                                <li>Guinness</li>
+                                <li>Stella</li>
+                                <li>Corona</li>
+                                <li>Modelo – Modelo Negra</li>
+                            </ul>
+                        </div>
+                        <div class="mb-4">
+                            <h4 class="font-bold text-gray-800 mb-2">Ciders, Seltzers & Coolers ($7.50)</h4>
+                            <ul class="space-y-1 text-gray-600">
+                                <li>Strongbow</li>
+                                <li>Hey Y'all</li>
+                                <li>Smirnoff Ice</li>
+                                <li>White Claw</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800 mb-2">Non-Alcoholic</h4>
+                            <ul class="space-y-1 text-gray-600">
+                                <li>Corona Sunbrew ($5.50)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Cocktails Section -->
+                <h3 class="text-2xl font-bold text-center text-green-800 mb-6 animate-on-scroll">COCKTAILS</h3>
+                <div class="grid md:grid-cols-2 gap-6 mb-10">
+                    <!-- Signature Cocktails -->
+                    <div class="bg-white p-6 rounded-lg shadow-md animate-on-scroll">
+                        <h3 class="text-xl font-bold text-green-800 mb-3">SIGNATURE COCKTAILS</h3>
+                        <div class="mb-3">
+                            <h4 class="font-bold text-gray-800">Bobby Jones ($11.50)</h4>
+                            <p class="text-gray-600 text-sm">1.5 oz of brandy, 1 oz of creme de cacao, a dash of grenadine with fresh lemon juice. A refreshing classic inspired by a legend of golf.</p>
+                        </div>
+                        <div class="mb-3">
+                            <h4 class="font-bold text-gray-800">Hole in One ($12.25)</h4>
+                            <p class="text-gray-600 text-sm">Bulleit bourbon 1.5 oz, 0.5 oz of orange liquor, egg white and lemon twist. A smooth whiskey sour with a splash of orange liqueur.</p>
+                        </div>
+                        <div class="mb-3">
+                            <h4 class="font-bold text-gray-800">John Daly ($10.75)</h4>
+                            <p class="text-gray-600 text-sm">1.5 oz vodka, equal parts lemonade and ice tea. A boozy twist on an Arnold Palmer, mixing vodka with iced tea and lemonade.</p>
+                        </div>
+                        <div class="mb-3">
+                            <h4 class="font-bold text-gray-800">Par-tini ($13.00)</h4>
+                            <p class="text-gray-600 text-sm">1.5 oz elderflower empress gin, 0.5 oz dry vermouth, muddled cucumber. A refreshing gin martini infused with cucumber and elderflower essence.</p>
+                        </div>
+                        <div class="mb-3">
+                            <h4 class="font-bold text-gray-800">Fairway Mojito (1oz: $9.50 | 2oz: $12.00)</h4>
+                            <p class="text-gray-600 text-sm">2 oz white rum, 0.5 oz simple syrup, mint leaves, 2 limes, 2 oz pineapple juice. A classic mojito with a tropical pineapple twist.</p>
+                        </div>
+                        <div class="mb-3">
+                            <h4 class="font-bold text-gray-800">Bogey Margarita (1oz: $9.50 | 2oz: $12.00)</h4>
+                            <p class="text-gray-600 text-sm">1.5 oz tequila, 0.5 oz triple sec, 1.5oz fresh lime juice, 0.5 oz simple syrup. A classic margarita with a salted rim.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Eagle Eye Old Fashioned ($13.00)</h4>
+                            <p class="text-gray-600 text-sm">2oz Bulleit bourbon, brown sugar cube, 3 dashes of bitters. A classic cocktail with a perfectly balanced blend of sweetness, bitterness, and spirit-forward flavour.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Shots and Wine -->
+                    <div class="bg-white p-6 rounded-lg shadow-md animate-on-scroll">
+                        <h3 class="text-xl font-bold text-green-800 mb-3">SHOTS ($7 each)</h3>
+                        <div class="mb-4">
+                            <ul class="space-y-2 text-gray-600">
+                                <li><span class="font-bold">Broken Down Golf Cart</span> - 0.5 oz Amaretto, 0.5 oz Melon Liqueur, dash of lime juice</li>
+                                <li><span class="font-bold">Bunker Shot</span> - ⅓ oz Kahlua, ⅓ oz Butter Ripple schnapps and ⅓ oz Baileys</li>
+                                <li><span class="font-bold">Birdie Juice</span> - 0.5 oz of Jägermeister, 0.5 oz of Root Beer Schnapps</li>
+                                <li><span class="font-bold">Water Hazard</span> - 0.5 oz of Blue curacao, 0.5 oz of Malibu Coconut Rum and pineapple juice</li>
+                            </ul>
+                        </div>
+                        
+                        <h3 class="text-xl font-bold text-green-800 mb-3 mt-6">WINE SELECTION</h3>
+                        <div class="mb-4">
+                            <h4 class="font-bold text-gray-800 mb-2">Red Wine</h4>
+                            <ul class="space-y-1 text-gray-600">
+                                <li>Gray Monk Cabernet Merlot (6oz: $7.50 | 9oz: $11.50 | Bottle: $32.00)</li>
+                                <li>Columbia Crest H3 Merlot (6oz: $7.50 | 9oz: $11.50 | Bottle: $35.00)</li>
+                                <li>Tinhorn Creek Pinot Noir (6oz: $8.25 | 9oz: $13.00 | Bottle: $40.00)</li>
+                                <li>Sunrock Shiraz (6oz: $9.00 | 9oz: $13.50 | Bottle: $40.00)</li>
+                                <li>Black Sage Cabernet Sauvignon (Bottle: $65.00)</li>
+                            </ul>
+                        </div>
+                        <div class="mb-4">
+                            <h4 class="font-bold text-gray-800 mb-2">White Wine</h4>
+                            <ul class="space-y-1 text-gray-600">
+                                <li>Astrolabe Sauvignon Blanc (6oz: $8.50 | 9oz: $12.50 | Bottle: $35.00)</li>
+                                <li>Haywire Pinot Gris (6oz: $8.00 | 9oz: $12.00 | Bottle: $33.00)</li>
+                                <li>Kris Delle Venezie Pinot Grigio (6oz: $8.00 | 9oz: $12.00 | Bottle: $33.00)</li>
+                                <li>Fort Berens Chardonnay (6oz: $7.50 | 9oz: $11.50 | Bottle: $33.00)</li>
+                                <li>Monte Creek Rose (6oz: $7.50 | 9oz: $11.50 | Bottle: $33.00)</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800 mb-2">Champagne</h4>
+                            <ul class="space-y-1 text-gray-600">
+                                <li>Ruffino Prosecco (Glass: $6.75 | Bottle: $49.99)</li>
+                                <li>MUMM G.H. Grand Cordon Brut (Bottle: $149.99)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="py-12 bg-green-800 text-white">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl font-bold mb-4 animate-on-scroll">HUNGRY YET?</h2>
+                <p class="text-xl mb-8 animate-on-scroll">Book your bay today and enjoy great food while you play!</p>
+                <a href="contact.html" class="inline-block bg-white text-green-800 hover:bg-gray-100 px-8 py-3 rounded-lg transition-custom btn-hover-effect text-lg font-semibold animate-on-scroll">
+                    BOOK NOW
+                </a>
+            </div>
+        </section>
+
+         <!-- Footer -->
+        <footer class="bg-gray-800 text-white py-8">
+            <div class="container mx-auto px-4 ml-2">
+                <div class="flex flex-col md:flex-row justify-between">
+                    <div class="flex flex-row md:flex md:flex-row md:justify-between md:w-1/2">
+                        <div class="mb-6 md:mb-0">
+                            <h3 class="text-xl font-bold mb-4">Mulligans</h3>
+                            <p class="mb-2">405 Victoria St</p>
+                            <p class="mb-2">Kamloops, BC V2C 2A9</p>
+                            <p class="mb-2">236-425-3341</p>
+                            <p class="overflow-wrap wrap-break-word">Mulliganskamloops@gmail.com</p>
+                        </div>
+                        <div class="mb-6 ml-6 md:mb-0">
+                            <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                            <ul>
+                                <li class="mb-2"><a href="index.html" class="hover:text-green-300 transition-custom">Home</a></li>
+                                <li class="mb-2"><a href="pages/menu.html" class="hover:text-green-300 transition-custom">Menu</a></li>
+                                <li><a href="pages/contact.html" class="hover:text-green-300 transition-custom">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Stay Connected</h3>
+                        <div class="flex space-x-4">
+                            <a href="https://www.facebook.com/people/Mulligans-on-4th/61574694073602/#" class="hover:text-green-300 transition-custom">
+                                <span class="sr-only">Facebook</span>
+                                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"></path>
+                                </svg>
+                            </a>
+                            <a href="https://www.instagram.com/mulliganson4th/" class="hover:text-green-300 transition-custom">
+                                <span class="sr-only">Instagram</span>
+                                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd"></path>
+                                </svg>
+                            </a>
+                            <a href="#" class="hover:text-green-300 transition-custom">
+                                <span class="sr-only">Twitter</span>
+                                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-8 text-center text-sm">
+                    <p>&copy; 2025 Mulligans Virtual Golf Pub & Bar. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- JavaScript -->
+        <script src="../assets/js/main.js"></script>
+    </body>
+    </html>
